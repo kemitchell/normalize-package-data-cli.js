@@ -2,7 +2,9 @@
   "name": "normalize-package-data-cli",
   "version": "1.0.1",
   "description": "CLI for normalize-package-data",
-  "bin": "./normalize-package-data",
+  "bin": {
+    "normalize-package-data": "./normalize-package-data"
+  },
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "repository": "kemitchell/normalize-package-data-cli.js",
   "license": "MIT",
