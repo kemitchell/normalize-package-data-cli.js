@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+if (process.argv.length < 3) {
+  process.stderr.write('Usage: <package.json file>\n')
+  process.exit(1)
+}
+var file = process.argv[2]
+var data = JSON.parse(require('fs').readFileSync(require('path').relative('.', file)))
+require('normalize-package-data')(data)
+process.stdout.write(JSON.stringify(data, null, 2) + '\n')
