@@ -1,6 +1,6 @@
 {
   "name": "normalize-package-data-cli",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "CLI for normalize-package-data",
   "bin": {
     "normalize-package-data": "./normalize-package-data"
